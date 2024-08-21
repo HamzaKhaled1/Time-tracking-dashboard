@@ -1,0 +1,93 @@
+
+.ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 77px;
+    padding: 2em;
+    color: #6d72ae;
+}
+
+  
+.ul .daily, .ul .weekly,.ul .monthly {
+    
+    cursor:pointer;
+    margin-bottom: 15px;
+}
+.ul .daily:hover,.ul .weekly:hover,.ul .monthly:hover{color: #f8f9ff;}
+
+.Active {
+    color: #f8f9ff;
+}
+
+.upper-report{
+    background-color: hsl(246, 80%, 60%);
+    width: 200px;
+    border-radius: 5%;
+    padding:1em ;
+    font-weight: 300;
+    height: 310px;
+}
+.upper-report span{
+    font-size: 40px;
+}
+.contanier{
+    color: white;
+    font-family: 'Rubik';
+    font-weight: 400; 
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width:768px) {
+    *{
+        box-sizing: border-box;
+    }
+    .right{
+        width:100%;
+    }
+    
+    .contanier{
+        padding: 0px !important;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: start;
+        align-content: start;
+        width: 100%;
+        height: min-content;
+        gap:10px;
+    }
+    .left{
+        width: 100%;
+    }
+    .ul{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        height: 50px;
+    }
+    .upper-report{
+        padding-top: 1em;
+        width: 100%;
+        border-radius: 5%;
+        font-weight: 300;
+        height: 210px;
+    }
+    .upper-report span{
+        font-size: 40px  ;
+    }
+}
+
+.left{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 6%;
+    
+    
+}
+.right{
+    width: 50%;
+}
+

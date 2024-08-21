@@ -1,0 +1,95 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    height: 100px;
+}
+@media screen and (max-width:768px) {
+    .cards{
+        display:flex;
+        flex-direction: column;
+        width: 200%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .type{
+        align-content: start;
+        padding: 0px;
+        display: flex !important;
+        justify-content: space-between !important;
+        gap:102px !important
+    
+        /* align-items: center; */
+    }
+    
+    
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 100%;
+    
+    
+}
+
+svg{
+    cursor: pointer;
+}
+
+
+.icon{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+
+}
+.icon img{
+position: absolute;
+right: 20px;
+
+
+
+
+}
+.bottomcard{
+    
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(235, 46%, 20%) ;
+    height: 159px;
+    border-radius: 5%;  
+    padding: 1em;
+}
+
+.current{
+    font-size: 40px;
+    font-weight: 250;
+    
+}
+.perivous{
+    opacity: 70%;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.c-p{
+display: flex;
+flex-direction: column;
+justify-content:center ;
+
+}
+.type{
+    display: flex;
+    justify-content: space-around;
+    gap:120px;
+    align-items: center;
+}
